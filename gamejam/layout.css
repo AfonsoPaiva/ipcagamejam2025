@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #0D0D0D;
+    padding-top: 150px;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 3%;
+    display: flex;
+    align-items: flex-start;
+    z-index: 100;
+    background-color: #196868;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F44E6A;
+    border-bottom: 3px solid #F44E6A;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    align-items: center;
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 20px;
+    color: #196868;
+}
+
+.game {
+    color: #F44E6A;
+}
+
+.mainpic {
+    width: 50%;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.cont {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    background-color: #196868;
+}
+
+.info-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.horário-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.jam-content, .regras-content, .espaço-content, .alimentação-content, .dia9, .dia10, .dia11 {
+    padding: 20px;
+    width: 25%;
+    height: auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dia9 > h1, .dia10 > h1, .dia11 > h1{
+    display: flex;
+    justify-content: center;
+    color: #F44E6A;
+}
+
+.dia9 > p, .dia10 > p, .dia11 > p{
+    display: flex;
+    justify-content: center;
+}
+
+.jam-content > h2, .regras-content > h2, .espaço-content > h2, .alimentação-content > h2 {
+    color: #F44E6A;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.hours{
+    color: #196868;
+}
+
+.direção-content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+@media (max-width: 768px) {
+    .jam-content, .regras-content, .espaço-content, .alimentação-content {
+        width: 48%;
+    }
+
+    .dia9, .dia10, .dia11 {
+        display: block; 
+        width: 100%; 
+        margin-bottom: 40px; 
+    }
+
+    .mainpic{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .main-content{
+        margin-bottom: 150px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #196868;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .jam-content, .regras-content, .espaço-content, .alimentação-content {
+        width: 100%;
+    }
+
+    .dia9, .dia10, .dia11 {
+        display: block; 
+        width: 100%; 
+        margin-bottom: 40px; 
+    }
+
+    .mainpic{
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 90px;
+    }
+
+    .main-content{
+        margin-bottom: 150px;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(50% - 20px);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+}
