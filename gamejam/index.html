@@ -1,144 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="layout.css">
-    <title>IPCA 2025 GAME JAM</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.2.3/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="layout.css" />
+    <title>IPCA GAME JAM 2025</title>
+    <link rel="icon" href="images/quad_azul.svg" type="image/png" />
+  </head>
+  <body>
     <!-- header -->
     <header class="header">
-        <nav>
-            <div id="hamburger">&#9776;</div> 
-            <ul id="navMenu">
-                <img src="/gamejam/Logo.png" class="nav-logo" alt="logopink">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#info">INFO</a></li>
-                <li><a href="#horário">HORÁRIOS</a></li>
-                <li><a href="#prémios">PRÉMIOS</a></li>
-                <li><a href="#apoios">APOIOS</a></li>
-                <li><a href="#direção">DIREÇÃO</a></li>
-            </ul>
-          </nav>
+      <nav>
+        <div id="hamburger">&#9776;</div>
+        <ul id="navMenu">
+          <img src="images/Logo.png" class="nav-logo" alt="logopink" />
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#info">INFO</a></li>
+          <li><a href="#horário">HORÁRIOS</a></li>
+          <li><a href="#prémios">PRÉMIOS</a></li>
+          <li><a href="#apoios">APOIOS</a></li>
+          <li><a href="#direção">DIREÇÃO</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- hero section -->
     <section id="home" class="hero-section">
-        <div class="hero-content">
-            <img src="/gamejam/mainpic.png" alt="mainpic" class="mainpic">
-            <div class= "main-content">
-                <h1 class= "ipca">IPCA</h1>
-                <p class= "game">GAME JAM</p>
-                <p class= "ano">2025</p>
-                <p class= "data">9 a 11 de maio</p>
-            </div>
+      <div class="hero-content">
+        <div class="gallery-grid">
+          <div class="card">
+            <img src="images/quad_azul.svg" alt="logoblue" />
+          </div>
+          <div class="card">
+            <img src="images/quad_rosa.svg" alt="logopink" />
+          </div>
+          <div class="card">
+            <img src="images/quad_azul.svg" alt="logoblue" />
+          </div>
+          <div class="card">
+            <img src="images/quad_rosa.svg" alt="logopink" />
+          </div>
+          <div class="card">
+            <img src="images/quad_azul.svg" alt="logoblue" />
+          </div>
+          <div class="card">
+            <img src="images/quad_rosa.svg" alt="logopink" />
+          </div>
         </div>
+        <div class="main-content">
+          <h1 class="ipca">IPCA</h1>
+          <p class="game">GAME JAM</p>
+          <p class="ano">2025</p>
+          <p class="data">9 a 11 de maio</p>
+          <button class="ins_button" id="insbtn">Inscreve-te!</button>
+        </div>
+      </div>
     </section>
 
     <!-- about section -->
     <section id="info" class="info-section">
-        <div class="cont">
-            <h2>INFO</h2>
+      <div class="continfo">
+        <h2>INFO</h2>
+      </div>
+      <div class="info-content">
+        <div class="jam-content">
+          <h2 class="infotit">JAM</h2>
+          <p>
+            A IPCA Game Jam 2025 decorre entre os dias 9 e 11 de Maio, no CI&D
+            do Instituto Politécnico do Cávado e do Ave (IPCA), em Barcelos. O
+            objectivo é juntar vários grupos de pessoas para criarem jogos
+            durante um período de 48h, com o tema dado no primeiro dia.
+          </p>
         </div>
-        <div class="info-content">
-            <div class="jam-content">
-                <h2>JAM</h2>
-                <p> A IPCA Game Jam 2025 decorre entre os dias 9 e 11 de Maio, no CI&D do Instituto Politécnico do Cávado e do Ave (IPCA), em Barcelos.
-                O objectivo é juntar vários grupos de pessoas para criarem jogos durante um período de 48h, com o tema dado no primeiro dia.
-                </p> 
-            </div>
-            <div class="regras-content">
-                <h2>REGRAS</h2>
-                <p> As equipas têm o número máximo de 5 elementos.
-                    -O tema do jogo será anunciado no próprio dia.
-                    -Os participantes têm liberdade total para desenvolver o tema da maneira desejada, desde que fundamentada e a organização e o júri entenda que seja adequada.
-                </p> 
-            </div>
-            <div class="espaço-content">
-                <h2>ESPAÇO</h2>
-                <p> Existe um espaço para dormir, no entanto, todos os participantes que desejem fazer proveito desse espaço deverão trazer colchões/sacos cama e almofadas.
-                </p> 
-            </div>
-            <div class="alimentação-content">
-                <h2>ALIMENTAÇÃO</h2>
-                <p> Todas as refeições são ao cargo da organização, à exceção de lanches.
-                </p> 
-            </div>
+        <div class="regras-content">
+          <h2>REGRAS</h2>
+          <p>
+            As equipas têm o número máximo de 5 elementos. -O tema do jogo será
+            anunciado no próprio dia. -Os participantes têm liberdade total para
+            desenvolver o tema da maneira desejada, desde que fundamentada e a
+            organização e o júri entenda que seja adequada.
+          </p>
         </div>
+        <div class="espaço-content">
+          <h2>ESPAÇO</h2>
+          <p>
+            Existe um espaço para dormir, no entanto, todos os participantes que
+            desejem fazer proveito desse espaço deverão trazer colchões/sacos
+            cama e almofadas.
+          </p>
+        </div>
+        <div class="alimentação-content">
+          <h2>ALIMENTAÇÃO</h2>
+          <p>
+            Todas as refeições são ao cargo da organização, à exceção de
+            lanches.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!--importance section-->
     <section id="horário" class="horário-section">
-        <div class="cont">
-            <h2>HORÁRIO</h2>
+      <div class="conthor">
+        <h2>HORÁRIO</h2>
+      </div>
+      <div class="horário-content">
+        <div class="dia9">
+          <h1>dia 9</h1>
+          <p class="hours">15h</p>
+          <p>recepção dos participantes</p>
+          <p class="hours">16h</p>
+          <p>abertura</p>
+          <p class="hours">17h</p>
+          <p>revelação do tema</p>
         </div>
-        <div class="horário-content">
-            <div class="dia9">
-                <h1>dia 9</h1>
-                <p class="hours">15h</p>
-                <p>recepção dos participantes</p>
-                <p class="hours">16h</p>
-                <p>abertura</p>
-                <p class="hours">17h</p>
-                <p>revelação do tema</p>
-            </div>
-            <div class="dia10">
-                <h1>dia 10</h1>
-                <p class="hours">09h</p>
-                <p>pequeno almoço</p>
-                <p class="hours">13h</p>
-                <p>almoço</p>
-                <p class="hours">20h</p>
-                <p>jantar</p>
-            </div>
-            <div class="dia11">
-                <h1>dia 11</h1>
-                <p class="hours">09h</p>
-                <p>pequeno almoço</p>
-                <p class="hours">13h</p>
-                <p>almoço</p>
-                <p class="hours">17h</p>
-                <p>apresentação do tema</p>
-            </div>
+        <div class="dia10">
+          <h1>dia 10</h1>
+          <p class="hours">09h</p>
+          <p>pequeno almoço</p>
+          <p class="hours">13h</p>
+          <p>almoço</p>
+          <p class="hours">20h</p>
+          <p>jantar</p>
         </div>
+        <div class="dia11">
+          <h1>dia 11</h1>
+          <p class="hours">09h</p>
+          <p>pequeno almoço</p>
+          <p class="hours">13h</p>
+          <p>almoço</p>
+          <p class="hours">17h</p>
+          <p>entrega de prémios</p>
+        </div>
+      </div>
     </section>
-
-    <!-- prémios section -->
     <section id="prémios" class="prémios-section">
-        <div class="cont">
-            <h2>PRÉMIOS</h2>
+      <div class="contpre">
+        <h2>PRÉMIOS</h2>
+      </div>
+      <div class="prémios-content">
+        <div class="pricing-table">
+          <!-- Melhor Jogo -->
+          <div class="pricing-option primeiro-lugar">
+            <i class="material-symbols-outlined"> rewarded_ads </i>
+            <h1>Melhor Jogo</h1>
+            <hr />
+            <p></p>
+            <hr />
+          </div>
+
+          <!-- Gameplay Inovador -->
+          <div class="pricing-option segundo-lugar">
+            <i class="material-symbols-outlined"> sports_esports </i>
+            <h1>Gameplay Inovador</h1>
+            <hr />
+            <p></p>
+            <hr />
+          </div>
+
+          <!-- Melhor Audio -->
+          <div class="pricing-option terceiro-lugar">
+            <i class="material-symbols-outlined"> headphones </i>
+            <h1>Melhor Audio</h1>
+            <hr />
+            <p></p>
+            <hr />
+          </div>
+
+          <!-- Melhores Visuais -->
+          <div class="pricing-option quarto-lugar">
+            <i class="material-symbols-outlined"> palette </i>
+            <h1>Melhores Visuais</h1>
+            <hr />
+            <p></p>
+            <hr />
+          </div>
+
+          <!-- Prémio do Público -->
+          <div class="pricing-option quinto-lugar">
+            <i class="material-symbols-outlined"> groups </i>
+            <h1>Prémio do Público</h1>
+            <hr />
+            <p></p>
+            <hr />
+          </div>
         </div>
-        <div class="prémios-content">  
-        </div>
-    </section>  
+      </div>
+    </section>
 
     <!-- apoio section -->
     <section id="apoios" class="apoios-section">
-        <div class="cont">
-            <h2>APOIOS</h2>
-        </div>
-        <div class="apoios-content">  
-        </div>
-    </section> 
+      <div class="contapoi">
+        <h2>APOIOS</h2>
+      </div>
+      <div class="apoios-content">
+        <section
+          id="image-carousel"
+          class="splide"
+          aria-label="IPCAGAMEJAM2025"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="https://est.ipca.pt/" target="_blank">
+                  <img src="images/estlogo.png" alt="" />
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://www.ratatuipizzaria.com/" target="_blank">
+                  <img src="images/ratatatuilogo.png" alt="Ratatatui Logo" />
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://www.redbull.com/pt-pt" target="_blank">
+                  <img src="images/redbulllogo.png" alt="Red Bull Logo" />
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a
+                  href="https://www.facebook.com/MERCADODAMUSICA/?locale=pt_PT"
+                  target="_blank"
+                >
+                  <img
+                    src="mercadodamusicalogo.png"
+                    alt="images/Mercado da Música Logo"
+                  />
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a
+                  href="https://www.instagram.com/blifebarcelos/"
+                  target="_blank"
+                >
+                  <img src="images/blifelogo.png" alt="Blife Logo" />
+                </a>
+              </li>
+
+              <li class="splide__slide">
+                <a
+                  href="https://www.facebook.com/poliprint2015/?locale=pt_PT"
+                  target="_blank"
+                >
+                  <img src="images/poliprintlogo.png" alt="Blife Logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
 
     <!-- direção section -->
     <section id="direção" class="direção-section">
-        <div class="cont">
-            <h2>DIREÇÃO</h2>
-        </div>
-        <div class="direção-content">  
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47783.83221755171!2d-8.703948651367147!3d41.536997200000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2453cb20c42a05%3A0xf840740c7c32e88!2sInstituto%20Polit%C3%A9cnico%20do%20C%C3%A1vado%20e%20do%20Ave%20(IPCA)!5e0!3m2!1spt-PT!2spt!4v1743627772845!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section> 
+      <div class="contdir">
+        <h2>DIREÇÕES</h2>
+      </div>
+      <div class="direção-content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47783.83221755171!2d-8.703948651367147!3d41.536997200000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2453cb20c42a05%3A0xf840740c7c32e88!2sInstituto%20Polit%C3%A9cnico%20do%20C%C3%A1vado%20e%20do%20Ave%20(IPCA)!5e0!3m2!1spt-PT!2spt!4v1743627772845!5m2!1spt-PT!2spt"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer>
-        <p>&copy; 2025 IPCA GAME JAM.</p>
+      <p>&copy; 2025 IPCA GAME JAM.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Model for  -->
 
-</body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="form-basin">
+          <span class="close">&times;</span>
+
+          <form id="myGoogleForm" autocomplete="off">
+            <div class="titandtext">
+              <h1>Increva-se</h1>
+              <br />
+              <p>
+                Aproveita esta oportunidade para participares numa gamejam
+                presencial onde poderás desenvolver um jogo do zero, colaborar
+                com outros entusiastas e pôr as tuas competências à prova num
+                ambiente criativo e descontraído. Haverá refeições incluídas
+                para todos os participantes, prémios aliciantes para as melhores
+                equipas e, acima de tudo, muita diversão garantida ao longo de
+                todo o evento. Inscreve-te já e vem fazer parte desta
+                experiência única no mundo do desenvolvimento de jogos!
+              </p>
+            </div>
+
+            <div class="form-content">
+              <div class="part1">
+                <h2>Informação Base</h2>
+                <div class="form-group">
+                  <label>O teu Papel</label>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Desenho"
+                      name="entry.924030847"
+                      value="Desenho"
+                    />
+                    <label for="Desenho">Desenho</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Som"
+                      name="entry.924030847"
+                      value="Som"
+                    />
+                    <label for="Som">Som</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Modelação"
+                      name="entry.924030847"
+                      value="Modelação"
+                    />
+                    <label for="Modelação">Modelação</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Game Design"
+                      name="entry.924030847"
+                      value="Game Design"
+                    />
+                    <label for="Game Design">Game Design</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Programação"
+                      name="entry.924030847"
+                      value="Programação"
+                    />
+                    <label for="Programação">Programação</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="O que fizer falta"
+                      name="entry.924030847"
+                      value="O que fizer falta"
+                    />
+                    <label for="O que fizer falta">O que fizer falta</label>
+                  </div>
+                </div>
+
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input
+                    class="input"
+                    id="1119363866"
+                    name="entry.1119363866"
+                    required
+                    type="text"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="name">Handle do Discord</label>
+                  <input
+                    class="input"
+                    id="1232158638"
+                    name="entry.1232158638"
+                    required
+                    type="text"
+                  />
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    class="input"
+                    id="754264033"
+                    name="entry.754264033"
+                    required
+                    type="email"
+                  />
+                </div>
+
+                <!-- Age Field -->
+                <div class="form-group">
+                  <label for="age">Idade</label>
+                  <input
+                    class="textinput"
+                    id="1703759281"
+                    name="entry.1703759281"
+                    required
+                    type="text"
+                  />
+                </div>
+
+                <!-- Team Name Field -->
+                <div class="form-group">
+                  <label>Tens Equipa?</label>
+                  <div>
+                    <input
+                      type="radio"
+                      id="yesteam"
+                      name="entry.1759159112"
+                      value="Sim"
+                      onclick="toggleTeamInfo(true)"
+                      required
+                    />
+                    <label for="yesteam">Sim</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="noteam"
+                      name="entry.1759159112"
+                      value="Não"
+                      onclick="toggleTeamInfo(false)"
+                    />
+                    <label for="noteam">Não</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="alonwteam"
+                      name="entry.1759159112"
+                      value="Quero Fazer Sozinho"
+                      onclick="toggleTeamInfo(false)"
+                    />
+                    <label for="yesteam">Quero Fazer Sozinho</label>
+                  </div>
+                </div>
+
+                <!-- Additional content to show if "Sim" is selected -->
+                <div id="team-info" style="display: none">
+                  <label for="1013608006"
+                    >Por favor, insira o nome da equipa</label
+                  >
+                  <input
+                    id="1583446382"
+                    class="textinput"
+                    name="entry.1583446382"
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <div class="part2">
+                <h2>Informação Adicional</h2>
+
+                <!-- Add this inside your form -->
+                <div class="form-group">
+                  <label for="1243516128"
+                    >Em quantas Game Jams já participaste?</label
+                  >
+                  <select id="choice" name="entry.119298277" required>
+                    <option value="" disabled selected>
+                      Selecione uma opção
+                    </option>
+                    <option name="entry.119298277" value="Nenhuma">
+                      Nenhuma
+                    </option>
+                    <option name="entry.119298277" value="1">1</option>
+                    <option name="entry.119298277" value="2">2</option>
+                    <option name="entry.119298277" value="3">3</option>
+                    <option name="entry.119298277" value="4">4</option>
+                    <option name="entry.119298277" value="5">5</option>
+                    <option name="entry.119298277" value="5+">5+</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="1389613057"
+                    >Para que dias Desejas Refeição?</label
+                  >
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Jantar de 9"
+                      name="entry.1023288177"
+                      value="Jantar de 9"
+                    />
+                    <label for="Jantar de 9">Jantar de 9</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Almoço de 10"
+                      name="entry.1023288177"
+                      value="Almoço de 10"
+                    />
+                    <label for="Almoço de 10">Almoço de 10</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Jantar de 10"
+                      name="entry.1023288177"
+                      value="Jantar de 10"
+                    />
+                    <label for="Jantar de 10">Jantar de 10</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="Almoço de 11"
+                      name="entry.1023288177"
+                      value="Almoço de 11"
+                    />
+                    <label for="Almoço de 11">Almoço de 11</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="550393479">Para que dias Desejas Banho?</label>
+                  <div>
+                    <input
+                      type="radio"
+                      id="Sábado as 18h"
+                      name="entry.1646975785"
+                      value="Sábado as 18h"
+                    />
+                    <label for="Sábado as 18h">Sábado as 18h</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="Não pretendo banho"
+                      name="entry.1646975785"
+                      value="Não pretendo banho"
+                    />
+                    <label for="Não pretendo banho">Não pretendo banho </label>
+                  </div>
+                </div>
+
+                <!-- Add this inside your form -->
+                <div class="form-group">
+                  <label>Vegetariano?</label>
+                  <div>
+                    <input
+                      type="radio"
+                      id="option1"
+                      name="entry.285864185"
+                      value="Sim"
+                      onclick="toggleVegetarianInfo(false)"
+                    />
+                    <label for="option1">Sim</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="option2"
+                      name="entry.285864185"
+                      value="Não"
+                      onclick="toggleVegetarianInfo(false)"
+                    />
+                    <label for="option2">Não</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="option3"
+                      name="entry.285864185"
+                      value="Outra restrição alimentar"
+                      onclick="toggleVegetarianInfo(true)"
+                    />
+                    <label for="option3">Outra restrição alimentar</label>
+                  </div>
+                </div>
+
+                <!-- Additional content to show if "Sim" is selected -->
+                <div id="vegetarian-info" style="display: none">
+                  <label for="vegetarian-details"
+                    >Por favor, descreva suas preferências:</label
+                  >
+
+                  <input
+                    id="592393859"
+                    class="textinput"
+                    id="team-name"
+                    name="entry.592393859"
+                    type="text"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="theme"
+                    >Tens alguma sugestão para o tema deste ano?</label
+                  >
+                  <input
+                    id="2118309678"
+                    class="textinput"
+                    id="team-name"
+                    name="entry.2118309678"
+                    type="text"
+                  />
+                </div>
+
+                <!-- Submit Button -->
+                <button class="submit-btn" type="submit">
+                  <span>Enviar</span>
+                  <div class="success">
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      viewBox="0 0 29.756 29.756"
+                      style="enable-background: new 0 0 29.756 29.756"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="text-contact">
+          <h1>As nossas redes sociais</h1>
+          <p>
+            Segue-nos nas redes sociais para ficares a par de todas as novidades
+            e junta-te ao nosso Discord para conheceres a comunidade,
+            partilhares ideias e começares já a formar equipa!
+          </p>
+          <div class="social-buttons">
+            <a
+              href="https://www.facebook.com/ipcagamejam/?locale=pt_PT"
+              class="social-button social-button--facebook"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://discord.gg/ACan7bA3"
+              class="social-button social-button--discord"
+              aria-label="Discord"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ipcagamejam/"
+              class="social-button social-button--instagram"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://ipcagamejam.itch.io/"
+              class="social-button social-button--itch-io"
+              aria-label="itch-io"
+            >
+              <i class="fa-brands fa-itch-io"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
 </html>
