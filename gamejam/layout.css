@@ -533,9 +533,10 @@ nav ul li a:hover {
   top: 0;
   width: 100%;
   min-height: 100%; /* Ensure the modal covers the full height */
-  display: flex;
+
   align-items: center;
   justify-content: center;
+  display: none;
   overflow: hidden; /* Prevent scrolling on the modal container */
 }
 

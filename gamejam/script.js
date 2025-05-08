@@ -322,7 +322,7 @@ window.addEventListener("load", function () {
     scrollTrigger: {
       trigger: ".info-section", // Set the trigger element
       start: "top 50%", // Trigger when the top of .info-section reaches 50% of the viewport
-      end: "bottom 50%", // End when the bottom of .info-section reaches 50% of the viewport
+      end: "40% 50%", // End when the bottom of .info-section reaches 50% of the viewport
       scrub: true, // Make the animation sync with scroll position
       markers: false, // Disable markers, but can enable for debugging
       invalidateOnRefresh: true, // Recalculate trigger positions when window is resized
@@ -498,7 +498,7 @@ window.addEventListener("load", function () {
     scrollTrigger: {
       trigger: ".horário-section", // Set the trigger element
       start: "top 50%", // Trigger when the top of .info-section reaches 50% of the viewport
-      end: "bottom 50%", // End when the bottom of .info-section reaches 50% of the viewport
+      end: "40% 50%", // End when the bottom of .info-section reaches 50% of the viewport
       scrub: true, // Make the animation sync with scroll position
       markers: false, // Disable markers, but can enable for debugging
       invalidateOnRefresh: true, // Recalculate trigger positions when window is resized
